@@ -1,2 +1,2 @@
 # Memory-Manager
-A custome memory manager written in C++
+A custom memory manager written in C++
