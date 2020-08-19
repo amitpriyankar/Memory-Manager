@@ -48,6 +48,9 @@ public:
     // setter function for LastPool
     void setLastPool(MemoryPool* lastPool);
 
+    // to delete all pools
+    void DeleteAllPools();
+
 }; 
 
 

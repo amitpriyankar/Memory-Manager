@@ -69,7 +69,7 @@ void MemoryManager::AddNewPool(const int poolSize, const int poolID)
     // }
     // debugString("\n");
 
-    
+
     return;
 }
 
@@ -189,7 +189,14 @@ void MemoryManager::setLastPool(MemoryPool* lastPool)
     LastPool = lastPool;
 }
 
-
+void MemoryManager::DeleteAllPools()
+{
+    MemoryPool* cur = FirstPool;
+    while(cur != nullptr)
+    {
+        DeletePool(cur->GetPoolID());
+    }
+}
 
 
 
